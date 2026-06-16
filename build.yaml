@@ -23,6 +23,8 @@ shield: ["icarus_left", "icarus_right"]
 include:
   - board: nice_nano
     shield: icarus_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: nice_nano
     shield: icarus_right
   - board: nice_nano
