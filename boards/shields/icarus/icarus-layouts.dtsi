@@ -4,11 +4,11 @@
 #include <physical_layouts.dtsi>
 
 / {
-    chosen {
-        zmk,physical-layout = &layout;
-        zmk,kscan = <&kscan>;
-    };
     / {
+        chosen {
+            zmk,physical-layout = &layout;
+            zmk,kscan = <&kscan>;
+        };
         layout: layout {
             compatible = "zmk,physical-layout";
             display-name = "Default Layout";
