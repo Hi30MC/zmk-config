@@ -6,8 +6,15 @@
 / {
     chosen {
         zmk,physical-layout = &layout;
-        zmk,kscan = <&kscan>;
+        zmk,kscan = &kscan;
     };
+
+    kscan: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        wakeup-source;
+    };
+
     layout: layout {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
