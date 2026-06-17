@@ -33,7 +33,7 @@
                 &kp F1          &kp TAB    &kp Q    &kp W    &kp E    &kp R      &kp T             &kp Y     &kp U        &kp I     &kp O    &kp P     &kp C_PP   &kp C_NEXT
                 &kp F2          &kp CAPS   &kp A    &kp S    &kp D    &kp F      &kp G             &kp H     &kp J        &kp K     &kp L    &kp SEMI  &kp APOS   &kp ENTER
                 &kp LS(LG(S))   &kp LSHIFT &kp Z    &kp X    &kp C    &kp V      &kp B             &kp N     &kp M        &kp COMMA &kp DOT  &kp SLASH &kp UP     &to 3
-                &kp F3          &kp LCTRL  &kp LGUI &kp LALT &kp F5   &MO_TOG(2) &mt DEL BSPC      &kp SPACE &MO_TOG(1)   &kp RALT  &kp RGUI &kp LEFT  &kp DOWN   &kp RIGHT
+                &kp F3          &kp LCTRL  &kp LGUI &kp LALT &kp F5   MO_TOG(2) &mt DEL BSPC      &kp SPACE MO_TOG(1)     &kp RALT  &kp RGUI &kp LEFT  &kp DOWN   &kp RIGHT
             >;
         };
 
@@ -44,7 +44,7 @@
                 &to 0  &trans &trans &kp KP_N9    &kp KP_N8    &kp KP_N7  &trans        &trans        &trans        &trans &trans &trans &trans  &trans
                 &trans &trans &trans &kp KP_N6    &kp KP_N5    &kp KP_N4  &trans        &mt LBRC LBKT &mt RBRC RBKT &trans &trans &trans &trans  &trans
                 &trans &trans &trans &kp KP_N3    &kp KP_N2    &kp KP_N1  &trans        &trans        &trans        &trans &trans &trans &trans  &trans
-                &trans &trans &trans &kp KP_ENTER &kp KP_DOT   &kp KP_N0  &trans        &trans        &MO_TOG(1)    &trans &trans &trans &trans  &trans
+                &trans &trans &trans &kp KP_ENTER &kp KP_DOT   &kp KP_N0  &trans        &trans        MO_TOG(1)     &trans &trans &trans &trans  &trans
             >;
         };
 
@@ -55,7 +55,7 @@
                 &to 0  &trans &trans &trans &trans &trans     &trans        &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans     &trans        &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans     &trans        &trans &trans &trans &trans &trans &trans &studio_unlock
-                &trans &trans &trans &trans &trans &MO_TOG(2) &trans        &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans MO_TOG(2)  &trans        &trans &trans &trans &trans &trans &trans &trans
             >;
         };
 
