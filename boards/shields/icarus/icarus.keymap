@@ -1,6 +1,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+#define MO_TOG(layer) &mo_tog layer layer
+
 / {
     behaviors {
         mo_tog: behavior_mo_tog {
