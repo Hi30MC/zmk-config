@@ -2,10 +2,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    &mt {
-        tapping-term-ms = <120>;
-    };
-
     behaviors {
         mo_tog: behavior_mo_tog {
             compatible = "zmk,behavior-hold-tap";
@@ -13,6 +9,9 @@
             flavor = "hold-preferred";
             tapping-term-ms = <120>;
             bindings = <&mo>, <&tog>;
+        };
+        &mt {
+            tapping-term-ms = <120>;
         };
     };
 
@@ -62,6 +61,7 @@
                 &trans &trans &trans &trans &trans &trans &SPACE        &&mt DEL BSPC &trans &trans &trans &trans &trans &trans
             >;
         };
+
         blank_layer {
             bindings = <
                 // blank layer for copy paste
