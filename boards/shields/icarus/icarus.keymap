@@ -1,23 +1,51 @@
-// This file was generated from a template. Edit it to match your keyboard.
-// See https://zmk.dev/docs/development/hardware-integration/new-shield for more instructions.
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    // Define a default keymap here.
-    // See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
                 // 5x7 matrix on both sides, standard QWERTY layout for now. Placeholders are F keys for now.
-                &kp ESC         &kp GRAVE  &kp N1  &kp N2   &kp N3   &kp N4   &kp N5         &kp N6    &kp N7  &kp N8    &kp N9   &kp N0    &kp MINUS  &kp EQUAL
-                &kp F1          &kp TAB    &kp Q   &kp W    &kp E    &kp R    &kp T          &kp Y     &kp U   &kp I     &kp O    &kp P     &kp F7     &kp F8
-                &kp F2          &kp CAPS   &kp A   &kp S    &kp D    &kp F    &kp G          &kp H     &kp J   &kp K     &kp L    &kp SEMI  &kp APOS   &kp ENTER
-                &kp LS(LG(S))   &kp LSHIFT &kp Z   &kp X    &kp C    &kp V    &kp B          &kp N     &kp M   &kp COMMA &kp DOT  &kp SLASH &kp UP     &studio_unlock
-                &kp F4          &kp LCTRL  &kp F5  &kp LGUI &kp LALT &kp F6   &kp BSPC       &kp SPACE &kp F10 &kp RALT  &kp RGUI &kp LEFT  &kp DOWN   &kp RIGHT
+                &kp ESC         &kp GRAVE  &kp N1   &kp N2   &kp N3   &kp N4   &kp N5         &kp N6    &kp N7  &kp N8    &kp N9   &kp N0    &kp MINUS  &kp EQUAL
+                &kp F1          &kp TAB    &kp Q    &kp W    &kp E    &kp R    &kp T          &kp Y     &kp U   &kp I     &kp O    &kp P     &kp K_PP   &kp K_NEXT
+                &kp F2          &kp CAPS   &kp A    &kp S    &kp D    &kp F    &kp G          &kp H     &kp J   &kp K     &kp L    &kp SEMI  &kp APOS   &kp ENTER
+                &kp LS(LG(S))   &kp LSHIFT &kp Z    &kp X    &kp C    &kp V    &kp B          &kp N     &kp M   &kp COMMA &kp DOT  &kp SLASH &kp UP     &kp F6
+                &kp F3          &kp LCTRL  &kp LGUI &kp LALT &kp F5   &tog 2   &mt BSPC DEL   &kp SPACE &mo 1   &kp RALT  &kp RGUI &kp LEFT  &kp DOWN   &kp RIGHT
+            >;
+        };
+
+        special_keys {
+            bindings = <
+                // special keys, numpad, etc.
+                &trans &trans &trans &kp KP_MINUS &kp KP_SLASH &kp KP_NUM &trans        &trans   &trans   &trans &trans &trans &kp DEL &kp ESC
+                &trans &trans &trans &kp KP_N9    &kp KP_N8    &kp KP_N7  &trans        &kp LBRC &kp RBRC &trans &trans &trans &trans  &trans
+                &trans &trans &trans &kp KP_N6    &kp KP_N5    &kp KP_N4  &trans        &kp LBKT &kp RBKT &trans &trans &trans &trans  &trans
+                &trans &trans &trans &kp KP_N3    &kp KP_N2    &kp KP_N1  &trans        &trans   &trans   &trans &trans &trans &trans  &trans
+                &trans &trans &trans &kp KP_ENTER &lt KP_DOT   &kp KP_N0  &trans        &trans   &mo 1    &trans &trans &trans &trans  &trans
+            >;
+        };
+
+        meta_keys {
+            bindings = <
+                // keyboard meta keys
+                &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &studio_unlock
+                &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans
+            >;
+        };
+
+        blank_layer {
+            bindings = <
+                // blank layer for copy paste
+                &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans        &trans &trans &trans &trans &trans &trans &trans
             >;
         };
     };
