@@ -19,11 +19,11 @@
         special_keys {
             bindings = <
                 // special keys, numpad, etc.
-                &trans &trans &trans &kp KP_MINUS &kp KP_SLASH &kp KP_NUM &trans        &trans   &trans   &trans &trans &trans &kp DEL &kp ESC
-                &trans &trans &trans &kp KP_N9    &kp KP_N8    &kp KP_N7  &trans        &kp LBRC &kp RBRC &trans &trans &trans &trans  &trans
-                &trans &trans &trans &kp KP_N6    &kp KP_N5    &kp KP_N4  &trans        &kp LBKT &kp RBKT &trans &trans &trans &trans  &trans
-                &trans &trans &trans &kp KP_N3    &kp KP_N2    &kp KP_N1  &trans        &trans   &trans   &trans &trans &trans &trans  &trans
-                &trans &trans &trans &kp KP_ENTER &lt KP_DOT   &kp KP_N0  &trans        &trans   &mo 1    &trans &trans &trans &trans  &trans
+                &trans &trans &trans &kp KP_MINUS &kp KP_SLASH &kp KP_NUM &trans        &trans        &trans        &trans &trans &trans &kp DEL &kp ESC
+                &trans &trans &trans &kp KP_N9    &kp KP_N8    &kp KP_N7  &trans        &trans        &trans        &trans &trans &trans &trans  &trans
+                &trans &trans &trans &kp KP_N6    &kp KP_N5    &kp KP_N4  &trans        &mt LBKT LBRC &mt RBKT RBRC &trans &trans &trans &trans  &trans
+                &trans &trans &trans &kp KP_N3    &kp KP_N2    &kp KP_N1  &trans        &trans        &trans        &trans &trans &trans &trans  &trans
+                &trans &trans &trans &kp KP_ENTER &kp KP_DOT   &kp KP_N0  &trans        &trans        &mo 1         &trans &trans &trans &trans  &trans
             >;
         };
 
