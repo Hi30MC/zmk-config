@@ -64,7 +64,7 @@
                 &to 0  &trans &trans &trans &trans &trans &trans        &trans        &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans        &trans        &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans        &trans        &trans &trans &trans &trans &trans &to 0
-                &trans &trans &trans &trans &trans &trans &SPACE        &mt DEL BSPC  &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &kp SPACE     &mt DEL BSPC  &trans &trans &trans &trans &trans &trans
             >;
         };
 
