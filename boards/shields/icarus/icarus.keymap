@@ -87,11 +87,11 @@
         gaming_space_2 {
             bindings = <
                 // blank layer for copy paste
-                &trans &trans &trans &trans &trans &trans &trans           &trans    &trans &kp F12 &kp F2 &kp F1 &trans &trans
-                &to 0  &trans &trans &trans &trans &trans &trans           &trans    &trans &trans  &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans           &trans    &trans &trans  &trans &trans &trans &tlk 3 ENTER
-                &trans &trans &trans &trans &trans &trans &trans           &trans    &trans &trans  &trans &trans &trans &to 0
-                &trans &trans &trans &trans &trans &trans &mt DEL BSPC     &kp SPACE &trans &trans  &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans           &trans    &trans &trans &trans &trans &trans &trans
+                &to 0  &trans &trans &trans &trans &trans &trans           &trans    &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans           &trans    &trans &trans &trans &trans &trans &tlk 3 ENTER
+                &trans &trans &trans &trans &trans &trans &trans           &trans    &trans &trans &trans &trans &trans &to 0
+                &trans &trans &trans &trans &trans &trans &mt DEL BSPC     &kp SPACE &trans &trans &trans &trans &trans &trans
             >;
         };
         blank_layer {
